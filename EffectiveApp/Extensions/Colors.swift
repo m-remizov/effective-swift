@@ -12,23 +12,29 @@ extension Color {
  static var theme: Color  {
    return Color("theme")
  }
- static var BackgroundColor: Color  {
-   return Color("BackgroundColor")
+ static var Secondary: Color  {
+   return Color("Secondary")
  }
- static var BackgroundColorList: Color  {
-   return Color("BackgroundColorList")
+ static var Primary: Color  {
+   return Color("Primary")
  }
- static var ColorPrimary: Color  {
-   return Color("ColorPrimary")
+ static var Caption: Color  {
+   return Color("Caption")
  }
- static var Accent: Color  {
-   return Color("AccentColor")
+ static var Attention: Color  {
+   return Color("Attention")
  }
- static var TextColorPrimary: Color  {
-   return Color("TextColorPrimary")
+ static var Surface: Color  {
+   return Color("Surface")
  }
- static var TextColorSecondary: Color  {
-   return Color("TextColorSecondary")
+ static var Container: Color  {
+   return Color("Container")
+ }
+ static var Button: Color  {
+   return Color("Button")
+ } 
+ static var OnButton: Color  {
+   return Color("onButton")
  }
 }
 

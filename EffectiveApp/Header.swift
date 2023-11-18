@@ -19,7 +19,7 @@ struct Header: View {
                 ){
                     Text("Hello,")
                         .font(.custom("Poppins-Regular", size:16))
-                        .foregroundColor(Color("Secondary"))
+                        .foregroundColor(Color.Secondary)
                     Text(name)
                         .font(.custom("Poppins-Bold", size:20))
                         

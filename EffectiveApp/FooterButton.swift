@@ -21,13 +21,13 @@ struct FooterButton: View {
                     .frame(
                         width: 24, height: 24
                     )
-                    .foregroundColor(Color( isOpen ? "onButton" : "Secondary"))
+                    .foregroundColor(isOpen ? Color.OnButton : Color.Secondary)
                 Text(isOpen ? caption : "")
-                    .foregroundColor(Color(isOpen ? "onButton" : "Primary"))
+                    .foregroundColor(isOpen ? Color.OnButton : Color.Primary)
             }
         )
         .padding(12)
-        .background(Color(isOpen ? "Button" : "Primary"))
+        .background(isOpen ? Color.Button : Color.Primary)
         .cornerRadius(12)
     }
 }

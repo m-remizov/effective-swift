@@ -22,11 +22,11 @@ struct Option: View {
                     width: 24, height: 24
                 )
                 .padding(24)
-                .background(Color("Container"))
+                .background(Color.Container)
                 .clipShape(Circle())
             Text(caption)
                 .font(.custom("Poppins-Regular", size:15))
-                .foregroundColor(Color("Secondary"))
+                .foregroundColor(Color.Secondary)
             
         }
     }

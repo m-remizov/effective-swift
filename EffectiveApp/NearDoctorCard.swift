@@ -34,7 +34,7 @@ struct NearDoctorCard: View {
                                 .font(.custom("Poppins-Bold", size:16))
                             Text(speciality)
                                 .font(.custom("Poppins-Regular", size:14))
-                                .foregroundColor(Color("Secondary"))
+                                .foregroundColor(Color.Secondary)
                         }
                     )
                 }
@@ -43,7 +43,7 @@ struct NearDoctorCard: View {
                     Image("location")
                     Text("\(distance) KM")
                         .font(.custom("Poppins-Regular", size:14))
-                        .foregroundColor(Color("Secondary"))
+                        .foregroundColor(Color.Secondary)
                 }
             }
             Divider()
@@ -56,10 +56,10 @@ struct NearDoctorCard: View {
                         .frame(
                             width: 20, height: 20
                         )
-                        .foregroundColor(Color("Attention"))
+                        .foregroundColor(Color.Attention)
                     Text("\(rating) (\(reviewsCount) Reviews)")
                         .font(.custom("Poppins-Regular", size:12))
-                        .foregroundColor(Color("Attention"))
+                        .foregroundColor(Color.Attention)
                 }
                 Spacer()
                 HStack(
@@ -70,10 +70,10 @@ struct NearDoctorCard: View {
                         .frame(
                             width: 20, height: 20
                         )
-                        .foregroundColor(Color("Surface"))
+                        .foregroundColor(Color.Surface)
                     Text("Open at \(openTime)")
                         .font(.custom("Poppins-Regular", size:12))
-                        .foregroundColor(Color("Surface"))
+                        .foregroundColor(Color.Surface)
                 }
                 Spacer()
             }
@@ -81,7 +81,7 @@ struct NearDoctorCard: View {
         }
         .padding(.horizontal,16)
         .padding(.vertical, 20)
-        .background(Color("Primary"))
+        .background(Color.Primary)
         .cornerRadius(12)
     }
 }

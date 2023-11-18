@@ -27,7 +27,7 @@ struct DoctorCard: View {
                     Image(imageUrl)
                         .resizable()
                         .frame(width: 58, height: 58)
-                        .background(Color("Primary"))
+                        .background(Color.Primary)
                         .clipShape(Circle())
                         
                     VStack(
@@ -35,10 +35,10 @@ struct DoctorCard: View {
                     ){
                         Text(name)
                             .font(.custom("Poppins-Regular", size:16))
-                            .foregroundStyle(Color("Primary"))
+                            .foregroundStyle(Color.Primary)
                         Text(speciality)
                             .font(.custom("Poppins-Regular", size:14))
-                            .foregroundStyle(Color("Caption"))
+                            .foregroundStyle(Color.Caption)
                     }
                 }
                 Spacer()
@@ -55,10 +55,10 @@ struct DoctorCard: View {
                         .frame(
                             width: 16, height: 16
                         )
-                        .foregroundColor(Color("Primary"))
+                        .foregroundColor(Color.Primary)
                     Text(date)
                         .font(.custom("Poppins-Regular", size:12))
-                        .foregroundStyle(Color("Primary"))
+                        .foregroundStyle(Color.Primary)
                 }
                 Spacer()
                 HStack{
@@ -67,10 +67,10 @@ struct DoctorCard: View {
                         .frame(
                             width: 16, height: 16
                         )
-                        .foregroundStyle(Color("Primary"))
+                        .foregroundStyle(Color.Primary)
                     Text("\(firstTime) - \(secondTime)")
                         .font(.custom("Poppins-Regular", size:12))
-                        .foregroundStyle(Color("Primary"))
+                        .foregroundStyle(Color.Primary)
                 }
                 Spacer()
             }
