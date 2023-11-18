@@ -92,6 +92,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E1ABB962B08B9960050D10B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4E37DBB32B06924500F7A4F6 /* FooterButton.swift */,
+				4E37DBB12B06920300F7A4F6 /* Option.swift */,
+				4E37DBAF2B0691D600F7A4F6 /* Searchbar.swift */,
+				4E37DBAD2B06917300F7A4F6 /* NearDoctorCard.swift */,
+				4E37DBAB2B0690F800F7A4F6 /* DoctorCard.swift */,
+				4E37DBA92B06907400F7A4F6 /* Header.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		4E7942722B02A683006CB562 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +146,7 @@
 		4EAC74572AFF64200082A504 /* EffectiveApp */ = {
 			isa = PBXGroup;
 			children = (
+				4E1ABB962B08B9960050D10B /* Views */,
 				4E8592A92B03EBFC003B447A /* Extensions */,
 				4E7942972B02A9D8006CB562 /* Info.plist */,
 				4E7942722B02A683006CB562 /* Fonts */,
@@ -140,12 +154,6 @@
 				4EAC745A2AFF64200082A504 /* ContentView.swift */,
 				4EAC745C2AFF64230082A504 /* Assets.xcassets */,
 				4EAC745E2AFF64230082A504 /* Preview Content */,
-				4E37DBA92B06907400F7A4F6 /* Header.swift */,
-				4E37DBAB2B0690F800F7A4F6 /* DoctorCard.swift */,
-				4E37DBAD2B06917300F7A4F6 /* NearDoctorCard.swift */,
-				4E37DBAF2B0691D600F7A4F6 /* Searchbar.swift */,
-				4E37DBB12B06920300F7A4F6 /* Option.swift */,
-				4E37DBB32B06924500F7A4F6 /* FooterButton.swift */,
 			);
 			path = EffectiveApp;
 			sourceTree = "<group>";
