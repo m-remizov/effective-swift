@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  EffectiveApp
+
+  Created by Maxim Remizov on 18.11.2023.
+  
+*/
+"hello" = "Hello,";
+"search" = "Search doctor or health issue";
+"nearDoctor" = "Near doctor";
