@@ -23,14 +23,13 @@ struct NearDoctorCard: View {
                         .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
                     
                     VStack(
-                        alignment: .leading, spacing: 8, content: {
+                        alignment: .leading, spacing: 8){
                             Text(doctor.name)
                                 .font(.custom("Poppins-Bold", size:16))
                             Text(doctor.speciality)
                                 .font(.custom("Poppins-Regular", size:14))
                                 .foregroundColor(Color.Secondary)
                         }
-                    )
                 }
                 Spacer()
                 HStack{

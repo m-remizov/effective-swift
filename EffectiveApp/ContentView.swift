@@ -31,18 +31,16 @@ struct ContentView: View {
                 Spacer()
                     .frame(height: 24)
                 HStack(
-                    spacing: 13, content: {
+                    spacing: 13){
                         Option(caption:"Covid 19", image: Icons.sun)
                         Option(caption:"Doctor", image: Icons.profileAdd)
                         Option(caption:"Medicine", image: Icons.link)
                         Option(caption:"Hospital", image: Icons.hospital)
                     }
-                )
                 Spacer()
                     .frame(height: 32)
                 VStack(
-                    spacing: 16,
-                    content: {
+                    spacing: 16){
                         HStack{
                             Text("Near Doctor")
                             Spacer()
@@ -54,19 +52,16 @@ struct ContentView: View {
                                 }
                             }
                     }
-                )
             }
             .padding()
         }
         HStack(
-            spacing: 13, 
-            content: {
+            spacing: 13){
                 FooterButton(isOpen: true,caption: "Home", image: Icons.home)
                 FooterButton(isOpen: false,caption: "Calendar", image: Icons.calender)
                 FooterButton(isOpen: false,caption: "Message", image: Icons.message)
                 FooterButton(isOpen: false,caption: "Profile", image: Icons.profile)
             }
-        )
         .padding(.horizontal, 24)
         .padding(.vertical, 16)
 

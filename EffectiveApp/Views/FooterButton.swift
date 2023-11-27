@@ -15,7 +15,7 @@ struct FooterButton: View {
     
     var body: some View {
         HStack(
-            spacing: 8, content: {
+            spacing: 8){
                 image
                     .resizable()
                     .frame(
@@ -25,7 +25,6 @@ struct FooterButton: View {
                 Text(isOpen ? caption : "")
                     .foregroundColor(isOpen ? Color.OnButton : Color.Primary)
             }
-        )
         .padding(12)
         .background(isOpen ? Color.Button : Color.Primary)
         .cornerRadius(12)
