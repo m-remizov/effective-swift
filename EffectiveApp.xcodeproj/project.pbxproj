@@ -25,6 +25,8 @@
 		4EAC746A2AFF64230082A504 /* EffectiveAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EAC74692AFF64230082A504 /* EffectiveAppTests.swift */; };
 		4EAC74742AFF64230082A504 /* EffectiveAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EAC74732AFF64230082A504 /* EffectiveAppUITests.swift */; };
 		4EAC74762AFF64230082A504 /* EffectiveAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EAC74752AFF64230082A504 /* EffectiveAppUITestsLaunchTests.swift */; };
+		4EF5AA062B146BED00E045E7 /* Doctor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF5AA052B146BED00E045E7 /* Doctor.swift */; };
+		4EF5AA082B14739600E045E7 /* Icons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF5AA072B14739600E045E7 /* Icons.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,8 @@
 		4EAC746F2AFF64230082A504 /* EffectiveAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EffectiveAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EAC74732AFF64230082A504 /* EffectiveAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EffectiveAppUITests.swift; sourceTree = "<group>"; };
 		4EAC74752AFF64230082A504 /* EffectiveAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EffectiveAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4EF5AA052B146BED00E045E7 /* Doctor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Doctor.swift; sourceTree = "<group>"; };
+		4EF5AA072B14739600E045E7 /* Icons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icons.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +153,8 @@
 		4EAC74572AFF64200082A504 /* EffectiveApp */ = {
 			isa = PBXGroup;
 			children = (
+				4EF5AA042B146BC500E045E7 /* Models */,
+				4EF5AA032B146B4D00E045E7 /* Consts */,
 				4E1ABB962B08B9960050D10B /* Views */,
 				4E8592A92B03EBFC003B447A /* Extensions */,
 				4E7942972B02A9D8006CB562 /* Info.plist */,
@@ -184,6 +190,22 @@
 				4EAC74752AFF64230082A504 /* EffectiveAppUITestsLaunchTests.swift */,
 			);
 			path = EffectiveAppUITests;
+			sourceTree = "<group>";
+		};
+		4EF5AA032B146B4D00E045E7 /* Consts */ = {
+			isa = PBXGroup;
+			children = (
+				4EF5AA072B14739600E045E7 /* Icons.swift */,
+			);
+			path = Consts;
+			sourceTree = "<group>";
+		};
+		4EF5AA042B146BC500E045E7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4EF5AA052B146BED00E045E7 /* Doctor.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -325,7 +347,9 @@
 				4E37DBAE2B06917300F7A4F6 /* NearDoctorCard.swift in Sources */,
 				4E37DBAA2B06907400F7A4F6 /* Header.swift in Sources */,
 				4EAC745B2AFF64200082A504 /* ContentView.swift in Sources */,
+				4EF5AA082B14739600E045E7 /* Icons.swift in Sources */,
 				4E8592AB2B03EC3A003B447A /* Colors.swift in Sources */,
+				4EF5AA062B146BED00E045E7 /* Doctor.swift in Sources */,
 				4E37DBB02B0691D600F7A4F6 /* Searchbar.swift in Sources */,
 				4EAC74592AFF64200082A504 /* EffectiveAppApp.swift in Sources */,
 				4E37DBAC2B0690F800F7A4F6 /* DoctorCard.swift in Sources */,

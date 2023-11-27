@@ -9,13 +9,7 @@ import SwiftUI
 
 struct NearDoctorCard: View {
     
-    var imageUrl:String;
-    var name:String;
-    var distance:String;
-    var speciality:String;
-    var rating:String;
-    var reviewsCount:Int
-    var openTime:String
+    var doctor:Doctor;
     
     var body: some View {
         VStack(
@@ -23,16 +17,16 @@ struct NearDoctorCard: View {
         ){
             HStack() {
                 HStack{
-                    Image(imageUrl)
+                    Image(doctor.imageUrl)
                         .resizable()
                         .frame(width: 53, height: 53)
                         .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
                     
                     VStack(
                         alignment: .leading, spacing: 8, content: {
-                            Text(name)
+                            Text(doctor.name)
                                 .font(.custom("Poppins-Bold", size:16))
-                            Text(speciality)
+                            Text(doctor.speciality)
                                 .font(.custom("Poppins-Regular", size:14))
                                 .foregroundColor(Color.Secondary)
                         }
@@ -40,8 +34,8 @@ struct NearDoctorCard: View {
                 }
                 Spacer()
                 HStack{
-                    Image("location")
-                    Text("\(distance) KM")
+                    Icons.location
+                    Text("\(doctor.distance) KM")
                         .font(.custom("Poppins-Regular", size:14))
                         .foregroundColor(Color.Secondary)
                 }
@@ -51,13 +45,13 @@ struct NearDoctorCard: View {
                 spacing: 6
             ){
                 HStack{
-                    Image("clock")
+                    Icons.clock
                         .resizable()
                         .frame(
                             width: 20, height: 20
                         )
                         .foregroundColor(Color.Attention)
-                    Text("\(rating) (\(reviewsCount) Reviews)")
+                    Text("\(doctor.rating) (\(doctor.reviewsCount) Reviews)")
                         .font(.custom("Poppins-Regular", size:12))
                         .foregroundColor(Color.Attention)
                 }
@@ -65,13 +59,13 @@ struct NearDoctorCard: View {
                 HStack(
                     spacing: 6
                 ){
-                    Image("clock")
+                    Icons.clock
                         .resizable()
                         .frame(
                             width: 20, height: 20
                         )
                         .foregroundColor(Color.Surface)
-                    Text("Open at \(openTime)")
+                    Text("Open at \(doctor.openTime)")
                         .font(.custom("Poppins-Regular", size:12))
                         .foregroundColor(Color.Surface)
                 }
@@ -88,7 +82,6 @@ struct NearDoctorCard: View {
 
 #Preview {
     NearDoctorCard(
-     imageUrl: "brostito_photo", name: "Dr. Joseph Brostito", distance: "1.2", speciality: "Dental Specialist", rating: "4.8", reviewsCount: 120, openTime: "17:00"
-    
+        doctor: Doctor(imageUrl: "brostito_photo", name: "Dr. Joseph Brostito", distance: "1.2", speciality: "Dental Specialist", rating: "4.8", reviewsCount: 120, openTime: "17:00")
     )
 }

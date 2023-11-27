@@ -9,14 +9,14 @@ import SwiftUI
 
 struct FooterButton: View {
     var isOpen = false;
-    var imageUrl:String;
     var caption:String;
+    var image:Image
  
     
     var body: some View {
         HStack(
             spacing: 8, content: {
-                Image(imageUrl)
+                image
                     .resizable()
                     .frame(
                         width: 24, height: 24
@@ -33,5 +33,5 @@ struct FooterButton: View {
 }
 
 #Preview {
-    FooterButton(isOpen: true,imageUrl: "home", caption: "Home")
+    FooterButton(isOpen: true,caption: "Home",image: Icons.home)
 }

@@ -25,7 +25,7 @@ struct Header: View {
                         
                 }
                 Spacer()
-                Image("header_icon")
+                Icons.headerIcon
                     .resizable()
                     .frame(
                         width: 56, height: 56

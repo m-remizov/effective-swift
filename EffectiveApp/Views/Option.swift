@@ -9,14 +9,14 @@ import SwiftUI
 
 struct Option: View {
     var caption:String
-    var imageUrl:String
+    var image:Image
     
     
     var body: some View {
         VStack(
             spacing: 8
         ){
-            Image(imageUrl)
+            image
                 .resizable()
                 .frame(
                     width: 24, height: 24
@@ -33,5 +33,5 @@ struct Option: View {
 }
 
 #Preview {
-    Option(caption:"Covid 19", imageUrl: "sun")
+    Option(caption:"Covid 19", image: Icons.sun)
 }

@@ -11,7 +11,7 @@ struct Searchbar: View {
     @State private var searchText = ""
     var body: some View {
         HStack{
-            Image("search-normal")
+            Icons.search
                 .resizable()
                 .frame(
                     width: 24, height: 24

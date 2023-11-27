@@ -42,7 +42,7 @@ struct DoctorCard: View {
                     }
                 }
                 Spacer()
-                Image("arrow-right")
+                Icons.arrowRight
             }
             Divider()
                 .background(Color(red: 255, green: 255, blue: 255, opacity: 0.15))
@@ -50,7 +50,7 @@ struct DoctorCard: View {
                 spacing: 8
             ){
                 HStack{
-                    Image("calendar")
+                    Icons.calender
                         .resizable()
                         .frame(
                             width: 16, height: 16
@@ -62,7 +62,7 @@ struct DoctorCard: View {
                 }
                 Spacer()
                 HStack{
-                    Image("clock")
+                    Icons.clock
                         .resizable()
                         .frame(
                             width: 16, height: 16
